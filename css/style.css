@@ -65,6 +65,7 @@ header {
     background-color: var(--ther-white-color);
     border-bottom: 1px solid #ECECEC;
     padding: 24px 0;
+    position: relative;
 }
 
 .header-flex {
@@ -99,6 +100,14 @@ header {
 .ul-mail {
     display: flex;
     margin-left: auto;
+}
+.polosa{
+    width: 48px;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
 }
 
 
