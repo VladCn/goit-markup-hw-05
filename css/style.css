@@ -92,6 +92,8 @@ header {
 }
 .nav-ul-li:hover{
     fill: var(--hov-blue-color);
+    transition-property: fill;
+    transition-duration: 250ms;
 }
 .icon-m10{
     margin-right: 10px;
@@ -153,6 +155,8 @@ header {
 .head:hover,
 .head:focus {
     color: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms;
 }
 
 .info {
@@ -166,6 +170,8 @@ header {
 .info:hover,
 .info:focus {
     color: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms;
 }
 
 /*main*/
@@ -341,6 +347,8 @@ h2 {
 .a-logo-link svg:hover,
 .a-logo-link svg:focus{
     fill: #ffffff;
+    transition-property: fill;
+    transition-duration: 250ms;
 }
 
 .a-logo-link{
@@ -354,10 +362,14 @@ h2 {
 .a-logo-link:hover,
 .a-logo-link:focus{
     background-color: #2196F3;
+    transition-property: background-color;
+    transition-duration: 250ms;
 }
  .a-logo-link:hover svg,
  .a-logo-link:focus svg {
     fill: #ffffff;
+    transition-property: fill;
+    transition-duration: 250ms;
 }
 
 
@@ -391,10 +403,14 @@ h2 {
 .a-klienti:hover svg,
 .a-klienti:focus svg {
     fill: var(--hov-blue-color);
+    transition-property: fill;
+    transition-duration: 250ms;
 }
 .a-klienti:hover,
 .a-klienti:focus {
     border-color: var(--hov-blue-color);
+    transition-property: border-color;
+    transition-duration: 250ms;
 }
 .a-klienti {
     fill:#AFB1B8;
@@ -451,6 +467,8 @@ h2 {
     box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--ther-white-color);
     text-decoration: none;
+    transition-property: background,box-shadow,color;
+    transition-duration: 250ms;
 }
 
 .work-ul {
@@ -510,6 +528,7 @@ h2 {
     color: var(--ther-white-color);
     background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));
     padding: 63px 24px;
+    pointer-events: all;
 }
 .li-primeri-rabot-text {
     padding: 20px 24px;
@@ -606,9 +625,13 @@ address {
 .a-logo-foot:hover,
 .a-logo-foot:focus{
     background-color: var(--hov-blue-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
 }
 .a-logo-foot:hover svg {
     fill: var(--ther-white-color);
+    transition-property: fill;
+    transition-duration: 250ms;
 }
 .a-logo-foot-svg{
     display: flex;
