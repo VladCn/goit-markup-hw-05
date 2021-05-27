@@ -512,7 +512,7 @@ h2 {
     opacity: 0;
     width: 370px;
     height: 294px;
-    top:50%;
+    bottom:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
@@ -521,6 +521,7 @@ h2 {
     color: var(--ther-white-color);
     background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));
     padding: 63px 24px;
+
 }
 .li-primeri-rabot-fontext:hover,
 .li-primeri-rabot-fontext:focus{
@@ -538,7 +539,22 @@ h2 {
     background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));
     padding: 63px 24px;
     pointer-events: all;
+    animation: animateY110 3000ms infinite 1000ms;
 }
+@keyframes animateY110 {
+   0% {
+       transform: translateX(0);
+   }
+
+   50% {
+       transform: translateX(50px);
+   }
+
+   100% {
+       transform: translateX(0);
+   }
+}
+
 .li-primeri-rabot-text {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
