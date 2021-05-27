@@ -109,6 +109,14 @@ header {
     position: absolute;
     bottom: 0;
 }
+.polosa-port{
+    width: 78px;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+}
 
 
 /*END Flex Header*/
