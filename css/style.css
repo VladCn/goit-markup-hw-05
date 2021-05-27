@@ -539,21 +539,20 @@ h2 {
     background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));
     padding: 63px 24px;
     pointer-events: all;
-    animation: animateY110 3000ms infinite 1000ms;
+    /*animation: animateY110 3000ms infinite 1000ms;*/
 }
-@keyframes animateY110 {
-   0% {
-       transform: translateX(0);
-   }
+/*@keyframes animateY110 {*/
+/*   0% {*/
+/*       transform: translateX(0);*/
+/*   }*/
 
-   50% {
-       transform: translateX(50px);
-   }
+/*   50% {*/
+/*       transform: translateX(50px);*/
+/*   }*/
 
-   100% {
-       transform: translateX(0);
-   }
-}
+/*   100% {*/
+/*       transform: translateX(0);*/
+/*   }*/
 
 .li-primeri-rabot-text {
     padding: 20px 24px;
