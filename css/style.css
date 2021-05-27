@@ -94,6 +94,7 @@ header {
     fill: var(--hov-blue-color);
     transition-property: fill;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-m10{
     margin-right: 10px;
@@ -157,6 +158,7 @@ header {
     color: #2196F3;
     transition-property: color;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info {
@@ -172,6 +174,7 @@ header {
     color: #2196F3;
     transition-property: color;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*main*/
@@ -349,6 +352,7 @@ h2 {
     fill: #ffffff;
     transition-property: fill;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .a-logo-link{
@@ -364,12 +368,14 @@ h2 {
     background-color: #2196F3;
     transition-property: background-color;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
  .a-logo-link:hover svg,
  .a-logo-link:focus svg {
     fill: #ffffff;
     transition-property: fill;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -405,12 +411,14 @@ h2 {
     fill: var(--hov-blue-color);
     transition-property: fill;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .a-klienti:hover,
 .a-klienti:focus {
     border-color: var(--hov-blue-color);
     transition-property: border-color;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .a-klienti {
     fill:#AFB1B8;
@@ -469,6 +477,7 @@ h2 {
     text-decoration: none;
     transition-property: background,box-shadow,color;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-ul {
@@ -627,11 +636,13 @@ address {
     background-color: var(--hov-blue-color);
     transition-property: background-color;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .a-logo-foot:hover svg {
     fill: var(--ther-white-color);
     transition-property: fill;
     transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .a-logo-foot-svg{
     display: flex;
