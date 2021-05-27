@@ -468,10 +468,24 @@ h2 {
 .li-primeri-rabot {
     margin-left: 30px;
     margin-top: 30px;
-
-
 }
-
+.li-primeri-rabot-div{
+    position: relative;
+}
+.li-primeri-rabot-fontext{
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--ther-white-color);
+    background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));
+    padding: 24px 63px;
+}
 .li-primeri-rabot-text {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
