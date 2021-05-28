@@ -519,7 +519,7 @@ h2 {
     opacity: 0;
     width: 370px;
     height: 294px;
-    bottom:50%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
@@ -528,10 +528,27 @@ h2 {
     color: var(--ther-white-color);
     background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));
     padding: 63px 24px;
+    pointer-events: all;
 
 }
-.li-primeri-rabot-fontext:hover,
-.li-primeri-rabot-fontext:focus{
+/*.li-primeri-rabot-fontext:hover,*/
+/*.li-primeri-rabot-fontext:focus{*/
+/*    position: absolute;*/
+/*    opacity: 1;*/
+/*    width: 370px;*/
+/*    height: 294px;*/
+/*    top:50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    font-size: 18px;*/
+/*    line-height: 1.55;*/
+/*    letter-spacing: 0.03em;*/
+/*    color: var(--ther-white-color);*/
+/*    background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));*/
+/*    padding: 63px 24px;*/
+/*    pointer-events: all;*/
+/*}*/
+.li-primeri-rabot:hover > .li-primeri-rabot-div p{
     position: absolute;
     opacity: 1;
     width: 370px;
