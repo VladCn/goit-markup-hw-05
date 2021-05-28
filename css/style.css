@@ -151,14 +151,14 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--sec-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head:hover,
 .head:focus {
     color: #2196F3;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info {
@@ -167,14 +167,14 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--back-grey-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info:hover,
 .info:focus {
     color: #2196F3;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*main*/
@@ -347,6 +347,13 @@ h2 {
     display: flex;
     fill: #AFB1B8;
 }
+
+.a-logo-link svg,
+.a-logo-link svg{
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
 .a-logo-link svg:hover,
 .a-logo-link svg:focus{
     fill: #ffffff;
@@ -355,6 +362,7 @@ h2 {
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .a-logo-link{
     display: flex;
     border-radius: 50%;
@@ -362,22 +370,15 @@ h2 {
     height: 40px;
     align-items: center;
     justify-content: center;
-}
-.a-logo-link:hover,
-.a-logo-link:focus{
-    background-color: #2196F3;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
- .a-logo-link:hover svg,
- .a-logo-link:focus svg {
-    fill: #ffffff;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
+.a-logo-link:hover,
+.a-logo-link:focus{
+    background-color: #2196F3;
 
+}
 
 .proffesia {
     font-size: 16px;
@@ -406,20 +407,6 @@ h2 {
     /*align-items: center;*/
     /*justify-content: center;*/
 }
-.a-klienti:hover svg,
-.a-klienti:focus svg {
-    fill: var(--hov-blue-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-.a-klienti:hover,
-.a-klienti:focus {
-    border-color: var(--hov-blue-color);
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
 .a-klienti {
     fill:#AFB1B8;
     width: 170px;
@@ -430,7 +417,26 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+.a-klienti svg,
+.a-klienti svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.a-klienti:hover svg,
+.a-klienti:focus svg {
+    fill: var(--hov-blue-color);
+}
+.a-klienti:hover,
+.a-klienti:focus {
+    border-color: var(--hov-blue-color);
+}
+
 
 /*=================================Porfolio.html==============================================*/
 
@@ -467,6 +473,9 @@ h2 {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    transition-property: background,box-shadow,color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-select-button:hover,
@@ -475,9 +484,7 @@ h2 {
     box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--ther-white-color);
     text-decoration: none;
-    transition-property: background,box-shadow,color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .work-ul {
@@ -539,20 +546,8 @@ h2 {
     background-image:linear-gradient(rgba(33, 150, 243, 0.9),rgba(33, 150, 243, 0.9));
     padding: 63px 24px;
     pointer-events: all;
-    /*animation: animateY110 3000ms infinite 1000ms;*/
 }
-/*@keyframes animateY110 {*/
-/*   0% {*/
-/*       transform: translateX(0);*/
-/*   }*/
 
-/*   50% {*/
-/*       transform: translateX(50px);*/
-/*   }*/
-
-/*   100% {*/
-/*       transform: translateX(0);*/
-/*   }*/
 
 .li-primeri-rabot-text {
     padding: 20px 24px;
@@ -645,11 +640,16 @@ address {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .a-logo-foot:hover,
 .a-logo-foot:focus{
     background-color: var(--hov-blue-color);
-    transition-property: background-color;
+}
+.a-logo-foot svg {
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
