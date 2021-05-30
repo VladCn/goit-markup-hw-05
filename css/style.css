@@ -90,12 +90,13 @@ header {
     align-items: center;
     fill:currentColor;
 }
-.nav-ul-li:hover{
+.nav-ul-li:hover {
     fill: var(--hov-blue-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-m10{
     margin-right: 10px;
 }
@@ -162,6 +163,8 @@ header {
 }
 
 .info {
+    display:flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -354,12 +357,9 @@ h2 {
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.a-logo-link svg:hover,
-.a-logo-link svg:focus{
+.a-logo-link:hover svg,
+.a-logo-link:focus svg{
     fill: #ffffff;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -377,7 +377,7 @@ h2 {
 .a-logo-link:hover,
 .a-logo-link:focus{
     background-color: #2196F3;
-
+    fill: #ffffff;
 }
 
 .proffesia {
@@ -397,16 +397,7 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-.li-klienti{
-    /*width: 170px;*/
-    /*height: 92px;*/
-    /*border: 1px solid #AFB1B8;*/
-    /*border-radius: 4px;*/
-    /*padding: 16px 32px;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-}
+
 .a-klienti {
     fill:#AFB1B8;
     width: 170px;
@@ -512,7 +503,14 @@ h2 {
     cursor: pointer;
 
 }
-.li-primeri-rabot:hover {
+
+.a-primeri-rabot {
+    cursor: pointer;
+}
+
+.a-primeri-rabot:hover,
+.a-primeri-rabot:focus{
+    display: inline-block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .li-primeri-rabot-div{
@@ -537,10 +535,10 @@ h2 {
 
 }
 
-.li-primeri-rabot:hover > .li-primeri-rabot-div p{
+.a-primeri-rabot:hover > .li-primeri-rabot-div p,
+.a-primeri-rabot:focus > .li-primeri-rabot-div p{
     pointer-events: all;
     transform: translate(-50%, -50%);
-
 }
 
 
@@ -677,13 +675,12 @@ address {
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    animation: animate125 2000ms;
     width: 528px;
     height: 581px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
-
 }
 .bott-close {
     position: absolute;
@@ -707,5 +704,18 @@ address {
     opacity: 0;
     visibility:hidden;
     pointer-events: none;
+}
+@keyframes animate125 {
+    0% {
+        transform: scale(0.25);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 /*===============================MODAL END===============================*/
