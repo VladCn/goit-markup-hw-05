@@ -506,6 +506,7 @@ h2 {
 
 .a-primeri-rabot {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .a-primeri-rabot:hover,
