@@ -670,13 +670,15 @@ address {
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 100;
+    transition: opacity 250ms;
 }
 .modal{
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: animate125 2000ms;
+    /*animation: animate125 2000ms linear;*/
+    /*transition: opacity 250ms;*/
     width: 528px;
     height: 581px;
     background: #FFFFFF;
@@ -719,4 +721,5 @@ address {
         transform: scale(1);
     }
 }
+
 /*===============================MODAL END===============================*/
